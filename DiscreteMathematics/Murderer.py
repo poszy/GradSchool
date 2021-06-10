@@ -1,10 +1,10 @@
 #!/usr/bin/python
-import csv
+# Author  : Luis M. Pena
+# Course  : JHU Discrete Mathematics Spring '21
+# Purpose : Project 1 - Find the Murderer
+# Date    : 2/14/21
 
-# Author: Lu Pena
-# Date: Feb 14 2021
-# Purpose: Project 1 . Discrete Mathematics Spring 2021
-# Who is the murderer.
+import csv
 
 def findGuiltySuspects(pPaul, pQuinn, pRay, tTed, sSteve, caseNumber):
     """This function takes in 5 suspect names and computes the possibilies of guilt.

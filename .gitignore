@@ -130,3 +130,6 @@ dmypy.json
 
 # Compiled Java
 *.class
+
+# Eclipse
+.metadata/

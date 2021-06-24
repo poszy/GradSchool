@@ -12,7 +12,7 @@ import com.chuckkann.datastructures.IndexedList;
  * @author chuck
  * @version 0.2.0 by Jihyeon Ryu
  * @param <E>
- * 
+ *
  * Added previous pointer to in the node.
  * The program can iterate forward and backward.
  * The remove method can reconnect the previous node and the next node of the removed node to each other.
@@ -23,22 +23,25 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 	private int numElements;
 	private Node<E> head;
 	private Node<E> tail;
-	
-	public void printReverse() {
-		reverse1(head);
-	}
-	
+
+	public void printReverse() { reverse1(head);}
+
 	private void reverse1(Node next) {
-		// if next == null
-		//     return
-		// Do I print next.element here?
-		// reverse1(next.nextPtr)
-		// Or do I print next.element here?
+
+
+		if(next == null) { return; }
+
+		reverse1(next.nextPtr);
+
+		System.out.println(next);
+
+
+
 	}
 
 	/**
 	 * Constructor to create an instance of the class.
-	 * 
+	 *
 	 * @param size The initial size of the array to create.
 	 */
 	public LinkedList() {
@@ -49,7 +52,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.Collection#size()
 	 */
 	@Override
@@ -59,7 +62,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.Collection#iterator()
 	 */
 	@Override
@@ -69,7 +72,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.Collection#isEmpty()
 	 */
 	@Override
@@ -79,7 +82,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.Collection#clear()
 	 */
 	@Override
@@ -91,7 +94,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#add(java.lang.Comparable)
 	 */
 	@Override
@@ -101,7 +104,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#add(int, java.lang.Comparable)
 	 */
 	@Override
@@ -159,7 +162,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#add(int,
 	 * com.chuckkann.datastructures.Collection)
 	 */
@@ -189,7 +192,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#add(int,
 	 * java.lang.Comparable[])
 	 */
@@ -213,7 +216,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#remove(int)
 	 */
 	@Override
@@ -264,7 +267,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#retrieve(int)
 	 */
 	@Override
@@ -283,7 +286,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#set(int, java.lang.Comparable)
 	 */
 	@Override
@@ -301,7 +304,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#indexOf(java.lang.Comparable)
 	 */
 	@Override
@@ -311,7 +314,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#indexOf(int,
 	 * java.lang.Comparable)
 	 */
@@ -322,7 +325,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#indexOf(java.lang.Comparable,
 	 * java.util.Comparator)
 	 */
@@ -333,7 +336,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see com.chuckkann.datastructures.IndexedList#indexOf(int,
 	 * java.lang.Comparable, java.util.Comparator)
 	 */
@@ -368,7 +371,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * com.chuckkann.datastructures.IndexedList#lastIndexOf(java.lang.Comparable)
 	 */
@@ -379,7 +382,7 @@ public class LinkedList<E extends Comparable<E>> implements IndexedList<E> {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * com.chuckkann.datastructures.IndexedList#lastIndexOf(java.lang.Comparable,
 	 * java.util.Comparator)

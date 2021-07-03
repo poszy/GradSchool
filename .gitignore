@@ -133,3 +133,6 @@ dmypy.json
 
 # Eclipse
 .metadata/
+
+# Jet Brains
+.idea/

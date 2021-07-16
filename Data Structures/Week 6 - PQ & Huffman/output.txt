@@ -1,0 +1,68 @@
+/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java -javaagent: /out/production/Week 6 huffman.HuffmanTest
+
+i 1
+l 1
+s 1
+u 1
+
+----- Start Debugging -----
+
+
+First Node i;1
+Second Node l;1
+---------- Creating New Node
+---------- Pushing a:  i;1
+---------- Pushing b:  l;1
+freqeuecny of nodes: 2
+Inserting Node in PQ: Ā;2
+
+Nodes in tree: s;1
+Nodes in tree: u;1
+Nodes in tree: Ā;2
+
+First Node s;1
+Second Node u;1
+---------- Creating New Node
+---------- Pushing a:  s;1
+---------- Pushing b:  u;1
+freqeuecny of nodes: 2
+Inserting Node in PQ: ā;2
+
+Nodes in tree: Ā;2
+Nodes in tree: ā;2
+
+First Node Ā;2
+Second Node ā;2
+---------- Creating New Node
+---------- Pushing a:  Ā;2
+---------- Pushing b:  ā;2
+freqeuecny of nodes: 4
+Inserting Node in PQ: Ă;4
+
+Nodes in tree: Ă;4
+Root Node: Ă;4
+
+generateCode: Ascii Code - 105
+generateCode: HuffmanCode - 00
+
+generateCode: Ascii Code - 108
+generateCode: HuffmanCode - 01
+
+generateCode: Ascii Code - 115
+generateCode: HuffmanCode - 10
+
+generateCode: Ascii Code - 117
+generateCode: HuffmanCode - 11
+----- End Debugging -----
+
+String with corresponding HuffmanCodes:
+i : 00
+l : 01
+s : 10
+u : 11
+
+Encoded String: 00011011
+
+Decoded String: ilsu
+
+Process finished with exit code 0

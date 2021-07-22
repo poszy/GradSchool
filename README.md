@@ -1,5 +1,5 @@
 # Grad School Code Assignments
-### Grad School code asssignments I am saving for documentation purposes. This will make me look good on paper and boost my Github contributions. 
+### Grad School code assignments I am saving for documentation purposes. This will make me look good on paper and boost my Github contributions.
 Feel free to use anything that helps.
 
 Classes so far
